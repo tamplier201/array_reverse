@@ -42,14 +42,17 @@ namespace array_reverse
 
             // Считаем четные числа в массиве
             uint positive_count = 0;
+            float positive_sum = 0;
             for (int i = 0; i < myArray.Length; i++)
             {
                 if (myArray[i] % 2 == 0)
                 {
+                    positive_sum = positive_sum + myArray[i];
                     positive_count++;
                 }
             }
             Console.WriteLine("Количество четных чисел в массиве: " + positive_count);
+            Console.WriteLine("Сумма четных чисел в массиве: " + positive_sum);
 
             Console.ReadLine();
         }   
